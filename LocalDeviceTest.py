@@ -15,8 +15,8 @@ class LocalDeviceTest(AbstractVirtualCapability):
 
     def Addition(self, params: dict) -> dict:
         #formatPrint(self, f"Sending TestFieldBountaries: {self.TestFieldBoundaries}")
-        if params['int'] and params['SimpleIntParameter']:
-            self.ergebnis = params['SimpleIntParameter'] + params['int']
+        if params['int'] and params['SimpleIntegerParameter']:
+            self.ergebnis = params['SimpleIntegerParameter'] + params['int']
 
         return {"int": self.ergebnis}
 
